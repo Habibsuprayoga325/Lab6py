@@ -10,6 +10,8 @@ Dibawah ini adalah code untuk meng-import, karena kita akan gunakan system, untu
 from os import system
 
 Dibawah ini code untuk membuat list yang akan kita gunakan, karena program yang akan kita buat adalah program daftar nilai mahasiswa, maka kita buat terlebih dahulu list nya
+
+
 s_nama = []
 s_nim = []
 s_tugas = []
@@ -17,7 +19,10 @@ s_uts = []
 s_uas = []
 s_akhir = []
 
+
 Dibawah ini code untuk membuat fungsi judul, karena didalam fungsi, kita dapat memanggil fungsi tersebut berkali-kali tanpa harus mengulang codingannya, hanya perlu dengan cara memanggil fungsi ( contohnya: fungsi() ), setiap kita akan membuat fungsi, maka harus di awali dengan def dan diikuti dengan nama fungsi yang akan kita buat dan gunakan selanjutnya.
+
+
 def judul():
     print('==================================')
     print('|     Daftar Nilai Mahasiswa     |')
@@ -50,12 +55,15 @@ def judul():
         system('cls')
         menu()
 
+
 #berikut tampilan program ketika di jalankan
 ![gambar](tampilkandata.png)
 dengan ketentuan jika kita menekan angka 1 pada keyboard, maka akan menambah data, dan angka 2 akan menampilkan data, angka 3 akan meng-ubah data (nama), dan angka 4 akan menghapus data yang kita inginkan
 
 
 code dibawah untuk membuat fungsi tambah yang ada dalam program ini
+
+
 def tambah():
     system('cls')
     judul()
@@ -76,10 +84,13 @@ def tambah():
    uts = float(input('Nilai UTS        : '))
     s_uts.append(uts)
 
+
 berikut ketika program dijalankan
 ![ganbar](tambahdata.png)
 
 code di bawah adalah untuk membuat fungsi tampilan yang ada di dalam program ini
+
+
 def tampilkan():
     system('cls')
     judul()
@@ -104,10 +115,12 @@ def tampilkan():
     kembali = input('Kembali [Enter]')
     menu()
 
+
    berikut ketika program dijalankan
 ![gambar](tampilkandata.png)
 
 Code dibawah adalah untuk membuat fungsi merubah nama pada program ini, dengan ketentuan jika kita menekan angka 3 pada keyboard, maka akan muncul konfirmasi dan mengharuskan kita untuk menekan huruf B pada keyboard, dan setelah itu juga kita akan di haruskan menginputkan nomor urut list yang ada di program yang telah kita tampung, dan list tersebut dimulai dengan angka 0 adalah untuk list pertama, dan seterusnya
+
 
 def ubah():
     rubah = input('Ubah Biodata Tekan [B]   : ')
@@ -120,6 +133,7 @@ def ubah():
             s_nama[i] = namabaru
     kembali = input('Kembali Tekan [Enter]')
 
+
  berikut tampilan ketika program dijalankan
  ![gambar](ubahdata.png)
 
@@ -128,6 +142,8 @@ def ubah():
 ![gambar](tampilkandata.png)
 
 Code dibawah adalah untuk membuat fungsi hapus data yang sudah tertampung di dalam program, sama hal nya dengan fungsi ubah, kita harus memasukkan nomor urut list data yang ada di dalam program, yang kemudian akan di eksekusi penghapusan data. jika nomor urut yang kita inputkan ternyata tidak ada di dalam program, maka akan muncul peringatan NIM Tidak Ada.
+
+
 def hapus():
     system('cls')
     judul()
@@ -150,6 +166,7 @@ def hapus():
   print('Data Berhasil Di Hapus')
     kembali = input('Kembali Tekan [Enter]')
     menu()
+
     
   berikut tampilan program ketika dijalankan
   ![gambar](hapusdata.png)
@@ -158,10 +175,13 @@ def hapus():
   ![gambar](tampilkandatastlhdihapus.png)
 
   Code dibawah untuk fungsi pilihan selesai, jika kita sudah selesai, dan menekan angka 5 pada keyboard sesuai ketentuan pada fungsi menu, maka akan menyelesaikan program, tetapi tidak akan menutup program
+
+  
  def selesai():
     system('cls')
     menu()
 
 menu() 
+
 
 # Sekian praktikum function pada python ini di buat, Terima kasih
