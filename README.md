@@ -51,7 +51,7 @@ def judul():
         menu()
 
 #berikut tampilan program ketika di jalankan
-![gambar](tjl.png)
+![gambar](tampilkandata.png)
 dengan ketentuan jika kita menekan angka 1 pada keyboard, maka akan menambah data, dan angka 2 akan menampilkan data, angka 3 akan meng-ubah data (nama), dan angka 4 akan menghapus data yang kita inginkan
 
 
